@@ -52,19 +52,44 @@ function initContactForm() {
 
         if (!isValid) return;
 
-        /* Show success state (frontend-only, no backend) */
-        const formContent = form.querySelector('.form-content');
-        const formSuccess = form.querySelector('.form-success');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) submitBtn.disabled = true;
 
-        if (formContent && formSuccess) {
-            formContent.style.display = 'none';
-            formSuccess.classList.add('visible');
-        }
+        const endpoint = form.action && !form.action.endsWith('YOUR_FORM_ID')
+            ? form.action
+            : 'https://formspree.io/f/mrpzpywz';
 
-        /* Reset form fields */
-        form.reset();
+        const formData = new FormData(form);
+
+        fetch(endpoint, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                const formContent = form.querySelector('.form-content');
+                const formSuccess = form.querySelector('.form-success');
+
+                if (formContent && formSuccess) {
+                    formContent.style.display = 'none';
+                    formSuccess.classList.add('visible');
+                }
+                form.reset();
+            } else {
+                alert('Submission failed. Please verify your Formspree Form ID or try again.');
+            }
+        })
+        .catch(() => {
+            alert('An error occurred while sending your message. Please try again.');
+        })
+        .finally(() => {
+            if (submitBtn) submitBtn.disabled = false;
+        });
     });
-
+}
     /* Clear field error on input */
     form.querySelectorAll('input, textarea').forEach(field => {
         field.addEventListener('input', () => {

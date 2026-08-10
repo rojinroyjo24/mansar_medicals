@@ -851,29 +851,31 @@ nav a:hover::after {
 }
 
 .consultation-form h3 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--c-primary);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
 }
 
-.consultation-form > p {
-    font-size: 14px;
+.consultation-form > p,
+.consultation-form .form-content > p {
+    font-size: 14.5px;
     color: var(--c-text-muted);
-    margin-bottom: 32px;
-    line-height: 1.6;
+    margin-bottom: 30px;
+    line-height: 1.55;
 }
 
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px 20px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 }
 
 .form-group.full-width {
@@ -881,14 +883,15 @@ nav a:hover::after {
 }
 
 .form-group label {
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: 600;
-    color: var(--c-text);
+    color: var(--c-primary);
+    letter-spacing: 0.01em;
 }
 
 .form-group input,
 .form-group textarea {
-    padding: 14px 18px;
+    padding: 13px 16px;
     border: 1px solid var(--c-border);
     border-radius: var(--radius-sm);
     font-size: 14px;
@@ -921,6 +924,7 @@ nav a:hover::after {
     font-size: 12px;
     color: #e74c3c;
     display: none;
+    margin-top: 2px;
 }
 
 .form-group .error-message.visible {
@@ -929,11 +933,11 @@ nav a:hover::after {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 130px;
 }
 
 .form-submit {
-    margin-top: 24px;
+    margin-top: 28px;
 }
 
 .form-submit .btn-primary {
