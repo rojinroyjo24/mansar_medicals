@@ -1,22 +1,30 @@
 /* ═══════════════════════════════════════════════════════════════
-   MANSAR Medical — Responsive Styles
-   All media queries consolidated: desktop → tablet → mobile
+   MANSAR Medical — Responsive Stylesheet
+   Full responsive coverage: Desktop (1280px+) → Tablet → Mobile (320px)
    ═══════════════════════════════════════════════════════════════ */
 
-/* ─── MAX 1100px — Hero single column ───────────────────────── */
+/* Global image & element max-width safety */
+img, iframe, svg, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ─── MAX 1100px — Hero & Container Adjustments ──────────────── */
 @media (max-width: 1100px) {
     .hero-inner {
         grid-template-columns: 1fr;
         padding: 60px 20px 40px;
+        gap: 40px;
     }
 
     .hero-visual {
         max-width: 480px;
+        width: 100%;
         margin: 0 auto;
     }
 }
 
-/* ─── MAX 1000px — About & Market single column ─────────────── */
+/* ─── MAX 1000px — About, Market & Footer ───────────────────── */
 @media (max-width: 1000px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -37,9 +45,14 @@
         grid-template-columns: 1fr;
         gap: 48px;
     }
+
+    .service-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
-/* ─── MAX 900px — Navigation & Layout ───────────────────────── */
+/* ─── MAX 900px — Header Navigation & Showcase ──────────────── */
 @media (max-width: 900px) {
     .header-inner {
         padding: 0 20px;
@@ -47,36 +60,35 @@
 
     .container {
         padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    /* Hide desktop nav, show mobile toggle */
+    /* Mobile Header Navigation Toggle */
     nav {
-        display: none;
+        display: none !important;
     }
 
     .header-actions .btn-cta-sm {
-        display: none;
+        display: none !important;
     }
 
     .mobile-menu-toggle {
-        display: flex;
+        display: flex !important;
     }
 
-    .mobile-nav {
-        display: block;
-    }
-
-    .mobile-menu-overlay {
-        display: block;
-    }
-
-    /* Showcase & Process */
+    /* Visual Showcase */
     .showcase-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
     }
 
     .showcase-tile.tall {
-        grid-row: auto;
+        grid-row: auto !important;
+    }
+
+    .showcase-tile img {
+        height: 240px !important;
     }
 
     .process-steps {
@@ -89,70 +101,75 @@
     }
 
     /* Sections padding */
-    #about {
-        padding: 80px 0;
+    #about, #services, #process, #market, #contact, .inner-page-sec {
+        padding: 70px 0;
     }
 
-    #services {
-        padding: 80px 0;
-    }
-
-    #visual-showcase {
+    #visual-showcase, #cta, #advantages {
         padding: 60px 0;
-    }
-
-    #process {
-        padding: 80px 0;
-    }
-
-    #market {
-        padding: 80px 0;
-    }
-
-    #cta {
-        padding: 60px 0;
-    }
-
-    #contact {
-        padding: 80px 0;
     }
 }
 
-/* ─── MAX 800px — Service cards & CTA ───────────────────────── */
+/* ─── MAX 800px — Service Cards 1-Column Layout ─────────────── */
 @media (max-width: 800px) {
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .service-card {
+        grid-column: span 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .cta-card {
-        padding: 48px 24px;
+        padding: 40px 24px;
+        border-radius: var(--radius-md);
     }
 
     .expertise-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
     }
 
     .consultation-form {
-        padding: 32px 24px;
+        padding: 28px 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .form-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .legal-container {
+        padding: 32px 20px;
     }
 }
 
-/* ─── MAX 600px — Process & Footer single column ────────────── */
+/* ─── MAX 600px — Process, Hero Actions & Footer ───────────── */
 @media (max-width: 600px) {
     .process-steps {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 32px;
     }
 
     .hero-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 16px;
     }
 
     .hero-actions {
@@ -176,61 +193,71 @@
         justify-content: center;
         width: 100%;
     }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .page-subtitle {
+        font-size: 15px;
+    }
 }
 
-/* ─── MAX 480px — Fine adjustments ──────────────────────────── */
+/* ─── MAX 480px — Mobile Phones ─────────────────────────────── */
 @media (max-width: 480px) {
     h1 {
-        font-size: 32px;
+        font-size: 30px !important;
+        line-height: 1.25 !important;
     }
 
     .section-title {
-        font-size: 26px;
+        font-size: 24px !important;
     }
 
     .hero-desc {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .hero-float-card {
-        left: -16px;
-        bottom: -16px;
-        padding: 12px 16px;
-    }
-
-    .hero-float-card2 {
-        right: -8px;
-        top: 16px;
+        left: -8px;
+        bottom: -12px;
         padding: 10px 14px;
     }
 
+    .hero-float-card2 {
+        right: -4px;
+        top: 12px;
+        padding: 8px 12px;
+    }
+
     .hero-float-num {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .hero-float-card2 .fc2-val {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .service-card {
-        padding: 28px 24px;
+        padding: 24px 20px !important;
     }
 
     .market-img-badge {
-        bottom: -12px;
-        right: 12px;
-        padding: 12px 16px;
+        bottom: -10px;
+        right: 8px;
+        padding: 10px 14px;
     }
 
     .about-img-inset {
-        right: -12px;
-        bottom: -16px;
+        right: -8px;
+        bottom: -12px;
         width: 45%;
     }
 
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+        gap: 12px;
     }
 
     .footer-legal {
@@ -238,10 +265,10 @@
     }
 }
 
-/* ─── MAX 375px — Small mobile ──────────────────────────────── */
+/* ─── MAX 375px — Small Screens ──────────────────────────────── */
 @media (max-width: 375px) {
     .header-inner {
-        padding: 0 16px;
+        padding: 0 14px;
         height: 64px;
     }
 
@@ -250,19 +277,19 @@
     }
 
     .container {
-        padding: 0 16px;
+        padding: 0 14px;
     }
 
     .hero-inner {
-        padding: 40px 16px 30px;
+        padding: 36px 14px 24px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 26px !important;
     }
 
     .hero-stat .stat-num {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .hero-stat .stat-label {
@@ -270,22 +297,28 @@
     }
 
     .logo-name {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .service-card {
+        padding: 20px 16px !important;
     }
 }
 
-/* ─── MAX 320px — Smallest screens ──────────────────────────── */
+/* ─── MAX 320px — Ultra Small Screens ────────────────────────── */
 @media (max-width: 320px) {
     .hero-float-card,
-    .hero-float-card2 {
-        display: none;
-    }
-
-    .about-img-inset {
-        display: none;
-    }
-
+    .hero-float-card2,
+    .about-img-inset,
     .about-accent-dot {
-        display: none;
+        display: none !important;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .service-card {
+        padding: 18px 14px !important;
     }
 }

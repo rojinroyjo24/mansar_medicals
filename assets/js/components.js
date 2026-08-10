@@ -76,8 +76,29 @@ function initContactForm() {
 }
 
 /**
+ * Initialize FAQ accordion interactivity.
+ */
+function initFaq() {
+    const faqHeaders = document.querySelectorAll('.faq-header');
+    faqHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const parent = header.closest('.faq-item');
+            if (parent) {
+                const isOpen = parent.classList.contains('active');
+                /* Optional: Close other open FAQ items */
+                document.querySelectorAll('.faq-item.active').forEach(item => item.classList.remove('active'));
+                if (!isOpen) {
+                    parent.classList.add('active');
+                }
+            }
+        });
+    });
+}
+
+/**
  * Initialize all reusable components.
  */
 function initComponents() {
     initContactForm();
+    initFaq();
 }

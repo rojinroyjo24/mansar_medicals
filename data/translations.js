@@ -12,7 +12,7 @@ const translations = {
         /* Meta */
         meta: {
             title: "MANSAR Medical | Regulatory Affairs & Market Access",
-            description: "MANSAR Medical provides regulatory affairs, product registration, compliance, and market access support for pharmaceutical and medical device companies in Kazakhstan and EAEU markets."
+            description: "MANSAR Medical provides regulatory affairs, product registration, compliance, and market access support for pharmaceutical, medical device, and dietary supplement companies in Kazakhstan and EAEU markets."
         },
 
         /* Navigation */
@@ -29,7 +29,7 @@ const translations = {
         /* Hero */
         hero: {
             badge: "Kazakhstan & EAEU Certified Experts",
-            title: 'Regulatory Affairs<br>Solutions for <em>Pharma</em><br>and Medical Devices',
+            title: 'Regulatory Affairs<br>Solutions for <em>Pharmaceuticals</em>,<br>Medical Devices, and Dietary Supplements',
             subtitle: "Professional regulatory support for product registration, compliance, and market access across Kazakhstan and the broader EAEU. We navigate complexity so your products reach patients safely.",
             cta: "Request a Consultation",
             ctaSecondary: "Our Services",
@@ -40,14 +40,11 @@ const translations = {
             stat3Num: "GxP",
             stat3Label: "Compliant Process",
             floatNum: "100%",
-            floatLabel: "Submission Accuracy",
-            floatCompliance: "Compliance",
-            floatCertified: "ISO<br>Certified"
+            floatLabel: "Submission Accuracy"
         },
 
         /* Trust Bar */
         trustBar: {
-            item1: "ISO Certified",
             item2: "EAEU Authorized",
             item3: "GxP Compliant",
             item4: "Kazakhstan Registered",
@@ -119,12 +116,39 @@ const translations = {
                 title: "Pharmacovigilance Support",
                 description: "Robust safety monitoring and reporting systems designed to fulfill stringent local and regional pharmacovigilance obligations efficiently.",
                 items: [
-                    "Pharmacovigilance system support",
-                    "Regulatory PV documentation",
-                    "Qualified Person for Pharmacovigilance support",
-                    "Compliance consulting"
+                    "Outsourcing of QPPV functions",
+                    "Construction & support of PV systems",
+                    "Risk management system (RMS / RMP)",
+                    "Preparation of PSMF & SOPs",
+                    "Signal processing & reporting (PSUR, RMP, CIOMS)"
+                ]
+            },
+
+            inspection: {
+                title: "Preparing for Inspections (Inspection Readiness)",
+                description: "Full preparation for inspections according to GxP requirements by regulatory authorities and suppliers.",
+                items: [
+                    "Preparation for GxP inspections (GMP, GDP, GVP)",
+                    "Preparation for inspections by regulatory authorities & suppliers",
+                    "Internal audits",
+                    "Staff training & CAPA development"
                 ]
             }
+        },
+
+        /* Company Advantages */
+        advantages: {
+            label: "Company Advantages",
+            title: "Why Partner with MANSAR Medical",
+            subtitle: "Delivering regulatory excellence through international project experience, flexibility, and transparent processes.",
+            item1Title: "Experience with International Projects",
+            item1Desc: "Proven track record managing complex regulatory submissions for global pharmaceutical and medtech manufacturers.",
+            item2Title: "Flexible Approach to Client Needs",
+            item2Desc: "Tailored, personalized regulatory strategies customized to your unique product portfolio and business priorities.",
+            item3Title: "Professional Team",
+            item3Desc: "A dedicated team of senior regulatory affairs, GxP inspection readiness, and pharmacovigilance experts.",
+            item4Title: "Clear Deadlines & Transparent Processes",
+            item4Desc: "Clear milestones, predictable timelines, and transparent workflow reporting at every stage."
         },
 
         /* Visual Showcase */
@@ -183,12 +207,15 @@ const translations = {
         /* Contact */
         contact: {
             label: "Get in Touch",
+            companyName: "Mansar Medical LLP",
             title: "Request a Consultation",
             subtitle: "Have questions about regulatory requirements? Our team is ready to assist you with product registration, compliance, and market access in Kazakhstan and EAEU.",
             detailEmailLabel: "Email",
+            detailEmailValue: "info@mansarmedical.com",
             detailPhoneLabel: "Phone",
-            detailLocationLabel: "Office",
-            detailLocationValue: "Almaty, Kazakhstan",
+            detailPhoneValue: "+7 707 816 12 93",
+            detailLocationLabel: "Office Address",
+            detailLocationValue: "261 Turgut Ozal Street, Almaty 050060, Republic of Kazakhstan",
             formTitle: "Send Us a Message",
             formSubtitle: "Fill out the form below and we will get back to you shortly.",
             labelName: "Full Name",
@@ -199,7 +226,7 @@ const translations = {
             placeholderName: "Your full name",
             placeholderCompany: "Your company name",
             placeholderEmail: "you@company.com",
-            placeholderPhone: "+7 (___) ___-__-__",
+            placeholderPhone: "+7 (707) 816-12-93",
             placeholderMessage: "Tell us about your project or regulatory needs...",
             submit: "Request a Consultation",
             successTitle: "Message Sent!",
@@ -210,21 +237,114 @@ const translations = {
 
         /* Footer */
         footer: {
-            description: "Expert regulatory consulting for Kazakhstan and the EAEU. Navigating complex pharmaceutical and medical device compliance with precision and authority.",
+            description: "Expert regulatory consulting for Kazakhstan and the EAEU. Navigating complex pharmaceutical, medical device, and dietary supplement compliance with precision and authority.",
+            companyName: "Mansar Medical LLP",
+            address: "261 Turgut Ozal Street, Almaty 050060, Republic of Kazakhstan",
+            phone: "+7 707 816 12 93",
+            email: "info@mansarmedical.com",
             colCompany: "Company",
             linkAbout: "About Us",
             linkServices: "Our Services",
             linkProcess: "Process",
             linkMarkets: "Markets",
-            colResources: "Resources",
+            colResources: "Services",
             linkRegUpdates: "Regulatory Updates",
             linkEAEUGuidelines: "EAEU Guidelines",
             linkGxP: "GxP Compliance",
             linkPV: "PV Reports",
             colContact: "Contact Details",
-            copyright: "© 2024 MANSAR Medical. All rights reserved.",
+            copyright: "© 2024 Mansar Medical LLP. All rights reserved.",
             privacy: "Privacy Policy",
             terms: "Terms of Service"
+        },
+
+        /* Inner Pages Common & Specific EN */
+        innerPages: {
+            sidebarTitle: "Our Services",
+            sidebarCtaTitle: "Need Regulatory Support?",
+            sidebarCtaDesc: "Speak directly with our senior consultants regarding your registration roadmap in Kazakhstan and the EAEU.",
+            sidebarCtaBtn: "Request Consultation",
+            faqTitle: "Frequently Asked Questions",
+            breadcrumbHome: "Home",
+            breadcrumbServices: "Services"
+        },
+        aboutPage: {
+            bannerTitle: "About MANSAR Medical",
+            bannerSubtitle: "A trusted B2B regulatory partner helping global healthcare companies navigate complex market access requirements across Kazakhstan and the EAEU.",
+            visionTitle: "Our Mission & Strategic Vision",
+            visionText: "To empower pharmaceutical, medical device, and healthcare manufacturers with authoritative regulatory intelligence, transparent workflows, and uncompromising compliance standards.",
+            valuesTitle: "Core Operating Principles",
+            val1Title: "Regulatory Integrity",
+            val1Desc: "Full adherence to national laws, GxP regulations, and Eurasian Economic Union supranational decisions.",
+            val2Title: "Precision & Speed",
+            val2Desc: "Streamlined dossier preparation and active query management to eliminate unnecessary administrative bottlenecks.",
+            val3Title: "Confidentiality",
+            val3Desc: "Strict data protection protocols safeguarding your proprietary clinical and commercial IP.",
+            faq1Q: "What geographic regions does MANSAR Medical cover?",
+            faq1A: "We specialize in Kazakhstan national registration and unified Eurasian Economic Union (EAEU) procedures covering Kazakhstan, Armenia, Belarus, Kyrgyzstan, and Russia.",
+            faq2Q: "Do you act as an Authorized Local Representative?",
+            faq2A: "Yes, we provide full legal representation and Marketing Authorization Holder (MAH) services for foreign manufacturers."
+        },
+        servicesPage: {
+            bannerTitle: "Our Core Capabilities",
+            bannerSubtitle: "Comprehensive, end-to-end regulatory affairs solutions designed for seamless market entry and post-market compliance.",
+            matrixTitle: "Regulatory Pathways & Scope Comparison",
+            matrixColPath: "Regulatory Pathway",
+            matrixColScope: "Geographic Scope",
+            matrixColTime: "Est. Timeline",
+            matrixColAuthority: "Competent Authority"
+        },
+        pharmaPage: {
+            bannerTitle: "Pharmaceutical Product Registration",
+            bannerSubtitle: "Full-scope CTD dossier compilation, submission, national & EAEU registration, and post-approval variations.",
+            sec1Title: "Registration Pathways in Kazakhstan & EAEU",
+            sec1Text: "Under EEC Council Decision No. 78, pharmaceutical manufacturers can register products via national procedures or unified EAEU supranational routes.",
+            ctdTitle: "CTD / eCTD Dossier Preparation",
+            ctdDesc: "Our medical writing experts compile and review all 5 CTD Modules to ensure 100% submission compliance."
+        },
+        devicePage: {
+            bannerTitle: "Medical Device Registration",
+            bannerSubtitle: "Risk-class assessment, technical & clinical dossier preparation, laboratory testing coordination, and EAEU conformity.",
+            sec1Title: "Medical Device Classification & Compliance",
+            sec1Text: "We guide manufacturers of Class I, IIa, IIb, and III medical devices through local safety and performance evaluations.",
+            testingTitle: "Laboratory & Clinical Testing Support",
+            testingDesc: "Full coordination of toxicological, technical, EMC, and clinical evaluation reports required by regulatory bodies."
+        },
+        consultingPage: {
+            bannerTitle: "Regulatory Consulting & Lifecycle Management",
+            bannerSubtitle: "Post-approval variations, registration renewals, gap analyses, and authorized local representation.",
+            sec1Title: "Maintaining Product Compliance Throughout Its Lifecycle",
+            sec1Text: "We handle Type IA, IB, and II variations, registration renewals, packaging updates, and regulatory audit readiness."
+        },
+        pvPage: {
+            bannerTitle: "Pharmacovigilance Support",
+            bannerSubtitle: "Robust drug safety surveillance systems, PSMF establishment, QPPV services, and PSUR/PBRER reporting.",
+            sec1Title: "GVP-Compliant Safety Monitoring Systems",
+            sec1Text: "Full pharmacovigilance setup ensuring compliance with EAEU Good Pharmacovigilance Practice standards."
+        },
+        marketsPage: {
+            bannerTitle: "Kazakhstan & EAEU Market Access",
+            bannerSubtitle: "Strategic entry pathways into Kazakhstan and the broader 184M+ consumer Eurasian Economic Union unified market.",
+            sec1Title: "Regional Market Coverage",
+            sec1Text: "Kazakhstan serves as the strategic entry hub into the Eurasian region with direct access to all EAEU member states."
+        },
+        processPage: {
+            bannerTitle: "Our 4-Phase Methodology",
+            bannerSubtitle: "A structured, transparent regulatory framework engineered to minimize approval risks and accelerate time-to-market.",
+            sec1Title: "Methodology Breakdown",
+            sec1Text: "Every project follows a rigorous 4-stage audit, strategy, submission, and maintenance workflow."
+        },
+        contactPage: {
+            bannerTitle: "Contact MANSAR Medical",
+            bannerSubtitle: "Reach out to our senior regulatory consultants to schedule a technical consultation for your products."
+        },
+        privacyPage: {
+            bannerTitle: "Privacy Policy",
+            bannerSubtitle: "How MANSAR Medical protects your data and maintains strict GxP confidentiality standards."
+        },
+        termsPage: {
+            bannerTitle: "Terms of Service",
+            bannerSubtitle: "Terms and conditions governing the use of MANSAR Medical website and consulting services."
         }
     },
 
@@ -252,7 +372,7 @@ const translations = {
         /* Hero */
         hero: {
             badge: "Сертифицированные эксперты Казахстана и ЕАЭС",
-            title: 'Регуляторные решения<br>для <em>фармацевтических</em><br>компаний и медицинских изделий',
+            title: 'Регуляторные решения<br>для <em>фармацевтических препаратов</em>,<br>медицинских изделий и БАД',
             subtitle: "Профессиональное регуляторное сопровождение регистрации продукции, обеспечения соответствия требованиям и выхода на рынки Казахстана и ЕАЭС.",
             cta: "Получить консультацию",
             ctaSecondary: "Наши услуги",
@@ -263,14 +383,11 @@ const translations = {
             stat3Num: "GxP",
             stat3Label: "Соответствие стандартам",
             floatNum: "100%",
-            floatLabel: "Точность подачи",
-            floatCompliance: "Соответствие",
-            floatCertified: "ISO<br>Сертификат"
+            floatLabel: "Точность подачи"
         },
 
         /* Trust Bar */
         trustBar: {
-            item1: "Сертификация ISO",
             item2: "Авторизация ЕАЭС",
             item3: "Соответствие GxP",
             item4: "Регистрация в Казахстане",
@@ -342,12 +459,39 @@ const translations = {
                 title: "Фармаконадзор",
                 description: "Надежные системы мониторинга безопасности и отчетности для выполнения строгих местных и региональных обязательств по фармаконадзору.",
                 items: [
-                    "Поддержка системы фармаконадзора",
-                    "Подготовка регуляторной документации по фармаконадзору",
-                    "Поддержка уполномоченного лица по фармаконадзору",
-                    "Консультации по требованиям соответствия"
+                    "Аутсорсинг функций УЛФ (QPPV)",
+                    "Построение и поддержка системы фармаконадзора",
+                    "Система управления рисками (СУР / RMP)",
+                    "Разработка Мастер-файла (PSMF) и СОП",
+                    "Обработка сигналов и подготовка отчетов (PSUR, RMP, CIOMS)"
+                ]
+            },
+
+            inspection: {
+                title: "Подготовка к инспекциям (Inspection Readiness)",
+                description: "Полный комплекс работ по подготовке к инспекциям регуляторных органов и аудитам поставщиков по требованиям GxP.",
+                items: [
+                    "Подготовка к инспектированию по требованиям GxP (GMP, GDP, GVP)",
+                    "Подготовка к инспекциям регуляторных органов и поставщиков",
+                    "Внутренние аудиты и имитация инспекций",
+                    "Обучение персонала и разработка CAPA"
                 ]
             }
+        },
+
+        /* Company Advantages */
+        advantages: {
+            label: "Преимущества компании",
+            title: "Почему выбирают MANSAR Medical",
+            subtitle: "Обеспечение высокого качества регуляторных услуг благодаря международному опыту, гибкому подходу и прозрачным процессам.",
+            item1Title: "Опыт работы с международными проектами",
+            item1Desc: "Успешный опыт сопровождения сложных регуляторных проектов для международных фармацевтических и медицинских компаний.",
+            item2Title: "Гибкий подход к потребностям клиента",
+            item2Desc: "Персонализированные регуляторные стратегии, адаптированные под индивидуальные задачи вашего бизнеса.",
+            item3Title: "Профессиональная команда",
+            item3Desc: "Команда высококвалифицированных экспертов по регистрации, инспектированию GxP и фармаконадзору.",
+            item4Title: "Четкие сроки и прозрачные процессы",
+            item4Desc: "Понятные этапы работы, предсказуемые сроки и прозрачная отчетность на всех стадиях проекта."
         },
 
         /* Visual Showcase */
@@ -406,12 +550,15 @@ const translations = {
         /* Contact */
         contact: {
             label: "Связаться с нами",
+            companyName: "ТОО «Mansar Medical»",
             title: "Получить консультацию",
             subtitle: "Есть вопросы о регуляторных требованиях? Наша команда готова помочь вам с регистрацией продукции, обеспечением соответствия и выходом на рынки Казахстана и ЕАЭС.",
             detailEmailLabel: "Электронная почта",
+            detailEmailValue: "info@mansarmedical.com",
             detailPhoneLabel: "Телефон",
-            detailLocationLabel: "Офис",
-            detailLocationValue: "Алматы, Казахстан",
+            detailPhoneValue: "+7 707 816 12 93",
+            detailLocationLabel: "Адрес офиса",
+            detailLocationValue: "Республика Казахстан, г. Алматы, ул. Тургут Озала, д. 261, 050060",
             formTitle: "Отправить сообщение",
             formSubtitle: "Заполните форму ниже, и мы свяжемся с вами в ближайшее время.",
             labelName: "Полное имя",
@@ -422,7 +569,7 @@ const translations = {
             placeholderName: "Ваше полное имя",
             placeholderCompany: "Название вашей компании",
             placeholderEmail: "you@company.com",
-            placeholderPhone: "+7 (___) ___-__-__",
+            placeholderPhone: "+7 (707) 816-12-93",
             placeholderMessage: "Расскажите о вашем проекте или регуляторных потребностях...",
             submit: "Получить консультацию",
             successTitle: "Сообщение отправлено!",
@@ -433,21 +580,114 @@ const translations = {
 
         /* Footer */
         footer: {
-            description: "Экспертный регуляторный консалтинг для Казахстана и ЕАЭС. Навигация в сложном фармацевтическом регулировании и требованиях к медицинским изделиям с точностью и авторитетом.",
+            description: "Экспертный регуляторный консалтинг для Казахстана и ЕАЭС. Навигация в сложном фармацевтическом регулировании, медицинских изделиях и БАД с точностью и авторитетом.",
+            companyName: "ТОО «Mansar Medical»",
+            address: "Республика Казахстан, г. Алматы, ул. Тургут Озала, д. 261, 050060",
+            phone: "+7 707 816 12 93",
+            email: "info@mansarmedical.com",
             colCompany: "Компания",
             linkAbout: "О нас",
             linkServices: "Наши услуги",
             linkProcess: "Процесс",
             linkMarkets: "Рынки",
-            colResources: "Ресурсы",
+            colResources: "Услуги",
             linkRegUpdates: "Регуляторные обновления",
             linkEAEUGuidelines: "Руководства ЕАЭС",
             linkGxP: "Соответствие GxP",
             linkPV: "Отчеты по фармаконадзору",
             colContact: "Контактные данные",
-            copyright: "© 2024 MANSAR Medical. Все права защищены.",
+            copyright: "© 2024 ТОО «Mansar Medical». Все права защищены.",
             privacy: "Политика конфиденциальности",
             terms: "Условия использования"
+        },
+
+        /* Inner Pages Common & Specific RU */
+        innerPages: {
+            sidebarTitle: "Наши услуги",
+            sidebarCtaTitle: "Нужна консультация?",
+            sidebarCtaDesc: "Свяжитесь с нашими ведущими экспертами для обсуждения вашего регуляторного плана в Казахстане и ЕАЭС.",
+            sidebarCtaBtn: "Получить консультацию",
+            faqTitle: "Часто задаваемые вопросы",
+            breadcrumbHome: "Главная",
+            breadcrumbServices: "Услуги"
+        },
+        aboutPage: {
+            bannerTitle: "О компании MANSAR Medical",
+            bannerSubtitle: "Надежный B2B партнерт по регуляторным вопросам, помогающий международным фармацевтическим и медицинским компаниям выходить на рынки Казахстана и ЕАЭС.",
+            visionTitle: "Наша миссия и стратегия",
+            visionText: "Обеспечение производителей качественной экспертной поддержкой, прозрачными процессами и высоким стандартом соответствия нормативным требованиям.",
+            valuesTitle: "Принципы нашей работы",
+            val1Title: "Регуляторная точность",
+            val1Desc: "Полное соответствие национальному законодательству и правилам Евразийского экономического союза.",
+            val2Title: "Эффективность и скорость",
+            val2Desc: "Оптимизация подготовки регистрационного досье и оперативный ответ на запросы уполномоченных органов.",
+            val3Title: "Конфиденциальность",
+            val3Desc: "Строгое соблюдение защиты персональных и коммерческих данных наших клиентов.",
+            faq1Q: "Какие регионы охватывает MANSAR Medical?",
+            faq1A: "Мы специализируемся на национальной регистрации в Казахстане и единой процедуре регистрации в рамках ЕАЭС (Казахстан, Армения, Беларусь, Кыргызстан, Россия).",
+            faq2Q: "Предоставляете ли вы услуги Уполномоченного представителя?",
+            faq2A: "Да, мы выступаем в качестве официального местного представителя и держателя регистрационного удостоверения (ДРУ) для иностранных производителей."
+        },
+        servicesPage: {
+            bannerTitle: "Наши услуги и компетенции",
+            bannerSubtitle: "Комплексные регуляторные решения для успешного выхода на рынок и поддержания соответствия продукции.",
+            matrixTitle: "Сравнение регуляторных процедур",
+            matrixColPath: "Процедура",
+            matrixColScope: "Регион действия",
+            matrixColTime: "Сроки",
+            matrixColAuthority: "Регуляторный орган"
+        },
+        pharmaPage: {
+            bannerTitle: "Регистрация лекарственных средств",
+            bannerSubtitle: "Полный цикл подготовки досье в формате CTD/eCTD, проведение процедур в Казахстане и ЕАЭС, внесение изменений.",
+            sec1Title: "Процедуры регистрации в Казахстане и ЕАЭС",
+            sec1Text: "Согласно Решению Совета ЕЭК № 78, регистрация лекарств осуществляется по единым правилам ЕАЭС или национальным процедурам.",
+            ctdTitle: "Подготовка досье (CTD / eCTD)",
+            ctdDesc: "Составление и аудит всех 5 модулей CTD досье экспертами высокого уровня."
+        },
+        devicePage: {
+            bannerTitle: "Регистрация медицинских изделий",
+            bannerSubtitle: "Оценка классов риска, подготовка технической документации, организация испытаний и соответствие требованиям ЕАЭС.",
+            sec1Title: "Классификация и нормы для медицинских изделий",
+            sec1Text: "Сопровождение регистрации изделий классов I, IIa, IIb и III в строгом соответствии с требованиями безопасности.",
+            testingTitle: "Лабораторные и клинические испытания",
+            testingDesc: "Организация технических, токсикологических испытаний и клинико-лабораторных исследований."
+        },
+        consultingPage: {
+            bannerTitle: "Регуляторный консалтинг и пост-регистрационный контроль",
+            bannerSubtitle: "Внесение изменений, продление регистрационных удостоверений, gap-анализ и представительские услуги.",
+            sec1Title: "Поддержание соответствия на всем жизненном цикле",
+            sec1Text: "Сопровождение изменений типов IA, IB, II, подтверждение регистрации и адаптация маркировки."
+        },
+        pvPage: {
+            bannerTitle: "Фармаконадзор и безопасность",
+            bannerSubtitle: "Создание и поддержка системы фармаконадзора (Мастер-файл), услуги УЛФ, отчетность PSUR/PBRER.",
+            sec1Title: "Системы мониторинга безопасности GVP",
+            sec1Text: "Полное соответствие надлежащей практике фармаконадзора (GVP ЕАЭС)."
+        },
+        marketsPage: {
+            bannerTitle: "Выход на рынки Казахстана и ЕАЭС",
+            bannerSubtitle: "Стратегический доступ на единый рынок Евразийского экономического союза с населением более 184 млн человек.",
+            sec1Title: "Региональный охват",
+            sec1Text: "Казахстан как ключевой центр входа и интеграции в рамках единых процедур ЕАЭС."
+        },
+        processPage: {
+            bannerTitle: "Наша 4-этапная методология",
+            bannerSubtitle: "Структурированный подход к регистрации продукции, снижающий риски и ускоряющий выведение на рынок.",
+            sec1Title: "Этапы работы",
+            sec1Text: "Каждый проект проходит тщательную оценку, стратегическое планирование, подачу и поддержку."
+        },
+        contactPage: {
+            bannerTitle: "Контакты MANSAR Medical",
+            bannerSubtitle: "Свяжитесь с нашими специалистами для получения экспертной консультации по вашему проекту."
+        },
+        privacyPage: {
+            bannerTitle: "Политика конфиденциальности",
+            bannerSubtitle: "Правила обработки данных и защиты конфиденциальной информации клиентов."
+        },
+        termsPage: {
+            bannerTitle: "Условия использования",
+            bannerSubtitle: "Условия и порядок использования сайта и консалтинговых услуг MANSAR Medical."
         }
     }
 

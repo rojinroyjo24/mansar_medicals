@@ -64,7 +64,8 @@ function applyServiceFeatures(lang) {
         'pharmaceutical': t.services.pharmaceutical.items,
         'medicalDevice': t.services.medicalDevice.items,
         'regulatory': t.services.regulatory.items,
-        'pharmacovigilance': t.services.pharmacovigilance.items
+        'pharmacovigilance': t.services.pharmacovigilance.items,
+        'inspection': t.services.inspection ? t.services.inspection.items : []
     };
 
     Object.keys(serviceMap).forEach(serviceKey => {
