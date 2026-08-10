@@ -89,7 +89,7 @@ function initContactForm() {
             if (submitBtn) submitBtn.disabled = false;
         });
     });
-}
+
     /* Clear field error on input */
     form.querySelectorAll('input, textarea').forEach(field => {
         field.addEventListener('input', () => {
