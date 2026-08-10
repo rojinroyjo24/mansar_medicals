@@ -712,13 +712,15 @@ nav a:hover::after {
     align-items: flex-start;
     padding: 18px 20px;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: background var(--transition), transform var(--transition);
+    background: var(--c-surface-card);
+    border: 1px solid var(--c-border);
+    box-shadow: var(--shadow-sm);
+    transition: background var(--transition), transform var(--transition), border-color var(--transition);
 }
 
 .market-point:hover {
-    background: rgba(0, 194, 203, 0.08);
+    background: var(--c-surface-low);
+    border-color: var(--c-accent);
     transform: translateX(6px);
 }
 
@@ -739,16 +741,35 @@ nav a:hover::after {
 }
 
 .market-point h4 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
-    color: #fff;
+    color: var(--c-primary);
     margin-bottom: 4px;
 }
 
 .market-point p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--c-text-muted);
     line-height: 1.55;
+}
+
+/* Dark section specific overrides for #market */
+#market .market-point {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+}
+
+#market .market-point:hover {
+    background: rgba(0, 194, 203, 0.08);
+}
+
+#market .market-point h4 {
+    color: #fff;
+}
+
+#market .market-point p {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* ─── CONTACT SECTION ───────────────────────────────────────── */
