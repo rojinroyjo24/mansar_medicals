@@ -1,0 +1,291 @@
+/* ═══════════════════════════════════════════════════════════════
+   MANSAR Medical — Responsive Styles
+   All media queries consolidated: desktop → tablet → mobile
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── MAX 1100px — Hero single column ───────────────────────── */
+@media (max-width: 1100px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        padding: 60px 20px 40px;
+    }
+
+    .hero-visual {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+/* ─── MAX 1000px — About & Market single column ─────────────── */
+@media (max-width: 1000px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .market-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+/* ─── MAX 900px — Navigation & Layout ───────────────────────── */
+@media (max-width: 900px) {
+    .header-inner {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Hide desktop nav, show mobile toggle */
+    nav {
+        display: none;
+    }
+
+    .header-actions .btn-cta-sm {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-menu-overlay {
+        display: block;
+    }
+
+    /* Showcase & Process */
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-tile.tall {
+        grid-row: auto;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .process-steps::before {
+        display: none;
+    }
+
+    /* Sections padding */
+    #about {
+        padding: 80px 0;
+    }
+
+    #services {
+        padding: 80px 0;
+    }
+
+    #visual-showcase {
+        padding: 60px 0;
+    }
+
+    #process {
+        padding: 80px 0;
+    }
+
+    #market {
+        padding: 80px 0;
+    }
+
+    #cta {
+        padding: 60px 0;
+    }
+
+    #contact {
+        padding: 80px 0;
+    }
+}
+
+/* ─── MAX 800px — Service cards & CTA ───────────────────────── */
+@media (max-width: 800px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-card {
+        padding: 48px 24px;
+    }
+
+    .expertise-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .consultation-form {
+        padding: 32px 24px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ─── MAX 600px — Process & Footer single column ────────────── */
+@media (max-width: 600px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta-btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-btns .btn-cta-white,
+    .cta-btns .btn-cta-outline-white {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* ─── MAX 480px — Fine adjustments ──────────────────────────── */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .hero-float-card {
+        left: -16px;
+        bottom: -16px;
+        padding: 12px 16px;
+    }
+
+    .hero-float-card2 {
+        right: -8px;
+        top: 16px;
+        padding: 10px 14px;
+    }
+
+    .hero-float-num {
+        font-size: 22px;
+    }
+
+    .hero-float-card2 .fc2-val {
+        font-size: 18px;
+    }
+
+    .service-card {
+        padding: 28px 24px;
+    }
+
+    .market-img-badge {
+        bottom: -12px;
+        right: 12px;
+        padding: 12px 16px;
+    }
+
+    .about-img-inset {
+        right: -12px;
+        bottom: -16px;
+        width: 45%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+/* ─── MAX 375px — Small mobile ──────────────────────────────── */
+@media (max-width: 375px) {
+    .header-inner {
+        padding: 0 16px;
+        height: 64px;
+    }
+
+    #hero {
+        padding-top: 64px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-inner {
+        padding: 40px 16px 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .hero-stat .stat-num {
+        font-size: 24px;
+    }
+
+    .hero-stat .stat-label {
+        font-size: 11px;
+    }
+
+    .logo-name {
+        font-size: 16px;
+    }
+}
+
+/* ─── MAX 320px — Smallest screens ──────────────────────────── */
+@media (max-width: 320px) {
+    .hero-float-card,
+    .hero-float-card2 {
+        display: none;
+    }
+
+    .about-img-inset {
+        display: none;
+    }
+
+    .about-accent-dot {
+        display: none;
+    }
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>MANSAR Medical | Regulatory Affairs &amp; Market Access</title>
+  <meta name="description"
+    content="MANSAR Medical provides regulatory affairs, product registration, compliance, and market access support for pharmaceutical and medical device companies in Kazakhstan and EAEU markets.">
+  <link rel="canonical" href="https://mansar-med.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MANSAR Medical | Regulatory Affairs &amp; Market Access">
+  <meta property="og:description"
+    content="MANSAR Medical provides regulatory affairs, product registration, compliance, and market access support for pharmaceutical and medical device companies in Kazakhstan and EAEU markets.">
+  <meta property="og:url" content="https://mansar-med.com/">
+  <meta property="og:site_name" content="MANSAR Medical">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ═══ HEADER ══════════════════════════════════════════════ -->
+  <header id="site-header" role="banner">
+    <div class="header-inner">
+      <a class="logo-group" href="#" aria-label="MANSAR Medical — Home">
+        <img alt="MANSAR Medical Logo"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH1D01W7UbwObtLaaBsf2Iz6cK7imaixrM1cr0bbzdel8dROME5Dm1HEmSRSZwvebh1SLsUy-443EaHXvyyYzySJVCP14UfZHEYb87Uanh_rwQxNCMtBXADxek256B8uDN18mGu16BZiCGyjtCfjI6QFowW2kkEYiLNBidoT4gbrtXSXTjYXf8UeHHAAS_OAWDLM7SO_Imqz0fPL3T91o4MfNCmTSCB4nRBYnA6zs2F4l2MWT-fxLZtQ">
+        <span class="logo-name">MANSAR Medical</span>
+      </a>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#" data-i18n="navigation.home">Home</a>
+        <a href="#about" data-i18n="navigation.about">About</a>
+        <div class="nav-dropdown">
+          <a href="#services">
+            <span data-i18n="navigation.services">Services</span>
+            <span class="dropdown-icon" aria-hidden="true">▾</span>
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#services" data-i18n="services.pharmaceutical.title">Pharmaceutical Product Registration</a>
+            <a href="#services" data-i18n="services.medicalDevice.title">Medical Device Registration</a>
+            <a href="#services" data-i18n="services.regulatory.title">Regulatory Consulting &amp; Lifecycle</a>
+            <a href="#services" data-i18n="services.pharmacovigilance.title">Pharmacovigilance Support</a>
+          </div>
+        </div>
+        <a href="#contact" data-i18n="navigation.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button class="lang-btn" data-lang="ru" aria-label="Переключить на русский">RU</button>
+        </div>
+        <a href="#contact" class="btn-cta-sm">
+          <span class="material-symbols-outlined" style="font-size:16px">mail</span>
+          <span data-i18n="navigation.getInTouch">Get in Touch</span>
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile navigation panel -->
+  <div id="mobile-nav" class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="#" data-i18n="navigation.home">Home</a>
+    <a href="#about" data-i18n="navigation.about">About</a>
+    <div class="mobile-dropdown">
+      <div class="mobile-dropdown-header">
+        <a href="#services" data-i18n="navigation.services">Services</a>
+        <button class="mobile-dropdown-btn" aria-label="Toggle Services menu">▾</button>
+      </div>
+      <div class="mobile-dropdown-menu">
+        <a href="#services" data-i18n="services.pharmaceutical.title">Pharmaceutical Product Registration</a>
+        <a href="#services" data-i18n="services.medicalDevice.title">Medical Device Registration</a>
+        <a href="#services" data-i18n="services.regulatory.title">Regulatory Consulting &amp; Lifecycle</a>
+        <a href="#services" data-i18n="services.pharmacovigilance.title">Pharmacovigilance Support</a>
+      </div>
+    </div>
+    <a href="#contact" data-i18n="navigation.contact">Contact</a>
+    <div class="mobile-lang-switcher" role="group" aria-label="Language switcher">
+      <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+      <button class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+    </div>
+    <a href="#contact" class="mobile-cta">
+      <span class="material-symbols-outlined" style="font-size:16px">mail</span>
+      <span data-i18n="navigation.getInTouch">Get in Touch</span>
+    </a>
+  </div>
+
+  <!-- ═══ HERO ═════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob-2" aria-hidden="true"></div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge fade-up">
+          <span class="material-symbols-outlined">verified</span>
+          <span data-i18n="hero.badge">Kazakhstan &amp; EAEU Certified Experts</span>
+        </div>
+        <h1 class="fade-up fade-up-delay-1" data-i18n-html="hero.title">
+          Regulatory Affairs<br>Solutions for <em>Pharma</em><br>and Medical Devices
+        </h1>
+        <p class="hero-desc fade-up fade-up-delay-2" data-i18n="hero.subtitle">
+          Professional regulatory support for product registration, compliance, and market access across Kazakhstan and
+          the broader EAEU. We navigate complexity so your products reach patients safely.
+        </p>
+        <div class="hero-actions fade-up fade-up-delay-3">
+          <a href="#contact" class="btn-primary">
+            <span data-i18n="hero.cta">Request a Consultation</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="#services" class="btn-secondary">
+            <span class="material-symbols-outlined">apps</span>
+            <span data-i18n="hero.ctaSecondary">Our Services</span>
+          </a>
+        </div>
+        <div class="hero-stats fade-up fade-up-delay-4">
+          <div class="hero-stat">
+            <div class="stat-num" data-i18n="hero.stat1Num">100%</div>
+            <div class="stat-label" data-i18n="hero.stat1Label">Submission Accuracy</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num" data-i18n="hero.stat2Num">5+</div>
+            <div class="stat-label" data-i18n="hero.stat2Label">EAEU Markets</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num" data-i18n="hero.stat3Num">GxP</div>
+            <div class="stat-label" data-i18n="hero.stat3Label">Compliant Process</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual fade-up fade-up-delay-2">
+        <img class="hero-img-main" src="assets/images/pharma_lab_1786102748882.png"
+          alt="Premium pharmaceutical laboratory environment with advanced equipment" loading="eager">
+        <div class="hero-float-card" aria-hidden="true">
+          <div class="hero-float-icon">
+            <span class="material-symbols-outlined">assignment_turned_in</span>
+          </div>
+          <div>
+            <div class="hero-float-num" data-i18n="hero.floatNum">100%</div>
+            <div class="hero-float-label" data-i18n="hero.floatLabel">Submission Accuracy</div>
+          </div>
+        </div>
+        <div class="hero-float-card2" aria-hidden="true">
+          <div class="fc2-label" data-i18n="hero.floatCompliance">Compliance</div>
+          <div class="fc2-val" data-i18n-html="hero.floatCertified">ISO<br>Certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST BAR ════════════════════════════════════════════ -->
+  <div id="trust-bar" aria-label="Trust indicators">
+    <div class="trust-track">
+      <div class="trust-item"><span class="material-symbols-outlined">shield</span> <span
+          data-i18n="trustBar.item1">ISO Certified</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">public</span> <span
+          data-i18n="trustBar.item2">EAEU Authorized</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">science</span> <span
+          data-i18n="trustBar.item3">GxP Compliant</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">verified</span> <span
+          data-i18n="trustBar.item4">Kazakhstan Registered</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">health_and_safety</span> <span
+          data-i18n="trustBar.item5">PV Support</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">workspace_premium</span> <span
+          data-i18n="trustBar.item6">Expert Consultants</span></div>
+      <!-- Duplicate for seamless marquee -->
+      <div class="trust-item"><span class="material-symbols-outlined">shield</span> <span
+          data-i18n="trustBar.item1">ISO Certified</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">public</span> <span
+          data-i18n="trustBar.item2">EAEU Authorized</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">science</span> <span
+          data-i18n="trustBar.item3">GxP Compliant</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">verified</span> <span
+          data-i18n="trustBar.item4">Kazakhstan Registered</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">health_and_safety</span> <span
+          data-i18n="trustBar.item5">PV Support</span></div>
+      <div class="trust-item"><span class="material-symbols-outlined">workspace_premium</span> <span
+          data-i18n="trustBar.item6">Expert Consultants</span></div>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT / EXPERTISE ════════════════════════════════════ -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-stack fade-up">
+          <img class="about-img-main" src="assets/images/compliance_office_1786102760552.png"
+            alt="Professional regulatory compliance team reviewing pharmaceutical documents" loading="lazy">
+          <img class="about-img-inset" src="assets/images/medical_device_1786102782858.png"
+            alt="Advanced medical devices on clinical surface" loading="lazy">
+          <div class="about-accent-dot" aria-hidden="true"></div>
+        </div>
+        <div class="about-content">
+          <div class="section-label fade-up" data-i18n="about.label">Our Expertise</div>
+          <h2 id="about-title" class="section-title fade-up fade-up-delay-1" data-i18n="about.title">Navigating
+            Regulatory Complexity with Authority</h2>
+          <p class="section-subtitle fade-up fade-up-delay-2" data-i18n="about.subtitle">
+            MANSAR Medical provides end-to-end regulatory affairs solutions for pharmaceutical and medical device
+            companies seeking access to Kazakhstan and EAEU markets. We translate complex institutional guidelines into
+            clear, actionable compliance pathways.
+          </p>
+          <div class="expertise-cards">
+            <div class="expertise-card fade-up fade-up-delay-1">
+              <div class="expertise-icon teal"><span class="material-symbols-outlined">all_inclusive</span></div>
+              <h3 data-i18n="about.card1Title">Full Lifecycle Support</h3>
+              <p data-i18n="about.card1Desc">From pre-submission strategy through post-market surveillance, we cover
+                every regulatory touchpoint.</p>
+            </div>
+            <div class="expertise-card fade-up fade-up-delay-2">
+              <div class="expertise-icon navy"><span class="material-symbols-outlined">public</span></div>
+              <h3 data-i18n="about.card2Title">Local + EAEU Expertise</h3>
+              <p data-i18n="about.card2Desc">Deep knowledge of Kazakhstan national regulations and unified
+                supranational EAEU protocols.</p>
+            </div>
+            <div class="expertise-card fade-up fade-up-delay-3">
+              <div class="expertise-icon cyan"><span class="material-symbols-outlined">schedule</span></div>
+              <h3 data-i18n="about.card3Title">Efficient Management</h3>
+              <p data-i18n="about.card3Desc">Streamlined project execution designed to accelerate regulatory approvals
+                and minimize delays.</p>
+            </div>
+            <div class="expertise-card fade-up fade-up-delay-4">
+              <div class="expertise-icon slate"><span class="material-symbols-outlined">gavel</span></div>
+              <h3 data-i18n="about.card4Title">Legal Representation</h3>
+              <p data-i18n="about.card4Desc">Serving as your authorized local representative and Marketing
+                Authorization Holder (MAH).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═════════════════════════════════════════════ -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="services-header fade-up">
+        <div class="section-label" data-i18n="services.label">Core Capabilities</div>
+        <h2 id="services-title" class="section-title" data-i18n="services.title">Our Service Offerings</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">Specialized regulatory capabilities designed to
+          secure and maintain product compliance across all relevant jurisdictions.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service Card 1: Pharmaceutical -->
+        <div class="service-card svc-1 fade-up fade-up-delay-1">
+          <div class="service-card-icon"><span class="material-symbols-outlined">medication</span></div>
+          <h3 data-i18n="services.pharmaceutical.title">Pharmaceutical Product Registration</h3>
+          <p class="desc" data-i18n="services.pharmaceutical.description">MANSAR Medical provides full-cycle regulatory
+            support for pharmaceutical product registration.</p>
+          <ul class="service-features" data-service="pharmaceutical">
+            <li><span class="material-symbols-outlined">check_circle</span> New product registration</li>
+            <li><span class="material-symbols-outlined">check_circle</span> EAEU registration procedures</li>
+            <li><span class="material-symbols-outlined">check_circle</span> National registration procedures</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Registration recognition procedures</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Registration dossier preparation and review
+            </li>
+            <li><span class="material-symbols-outlined">check_circle</span> Preparation of responses to regulatory
+              authority questions</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory strategy development</li>
+          </ul>
+        </div>
+        <!-- Service Card 2: Medical Device -->
+        <div class="service-card svc-2 fade-up fade-up-delay-2">
+          <div class="service-card-icon"><span class="material-symbols-outlined">biotech</span></div>
+          <h3 data-i18n="services.medicalDevice.title">Medical Device Registration</h3>
+          <p class="desc" data-i18n="services.medicalDevice.description">Regulatory support for medical device
+            manufacturers entering Kazakhstan and EAEU markets.</p>
+          <ul class="service-features" data-service="medicalDevice">
+            <li><span class="material-symbols-outlined">check_circle</span> Registration support</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory documentation preparation</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory pathway assessment</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Communication with regulatory authorities
+            </li>
+            <li><span class="material-symbols-outlined">check_circle</span> Compliance support</li>
+          </ul>
+        </div>
+        <!-- Service Card 3: Regulatory Consulting -->
+        <div class="service-card svc-3 fade-up fade-up-delay-3">
+          <div class="service-card-icon"><span class="material-symbols-outlined">account_tree</span></div>
+          <h3 data-i18n="services.regulatory.title">Regulatory Consulting &amp; Lifecycle Management</h3>
+          <p class="desc" data-i18n="services.regulatory.description">Support throughout the entire product lifecycle.
+          </p>
+          <ul class="service-features" data-service="regulatory">
+            <li><span class="material-symbols-outlined">check_circle</span> Post-registration variations</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Registration dossier updates</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Renewal procedures</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory gap analysis</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory documentation review</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory strategy support</li>
+          </ul>
+        </div>
+        <!-- Service Card 4: Pharmacovigilance -->
+        <div class="service-card svc-4 fade-up fade-up-delay-4">
+          <div class="service-card-icon"><span class="material-symbols-outlined">health_and_safety</span></div>
+          <h3 data-i18n="services.pharmacovigilance.title">Pharmacovigilance Support</h3>
+          <p class="desc" data-i18n="services.pharmacovigilance.description">Robust safety monitoring and reporting
+            systems designed to fulfill stringent local and regional pharmacovigilance obligations efficiently.</p>
+          <ul class="service-features" data-service="pharmacovigilance">
+            <li><span class="material-symbols-outlined">check_circle</span> Pharmacovigilance system support</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Regulatory PV documentation</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Qualified Person for Pharmacovigilance
+              support</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Compliance consulting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VISUAL SHOWCASE ══════════════════════════════════════ -->
+  <section id="visual-showcase" aria-labelledby="showcase-title">
+    <div class="container">
+      <div class="showcase-header fade-up">
+        <div class="section-label" data-i18n="showcase.label">Our Environment</div>
+        <h2 id="showcase-title" class="section-title" data-i18n="showcase.title">Precision at Every Step</h2>
+        <p class="section-subtitle" data-i18n="showcase.subtitle">World-class facilities, expert consultants, and
+          cutting-edge tools dedicated to your regulatory success.</p>
+      </div>
+      <div class="showcase-grid fade-up fade-up-delay-1">
+        <div class="showcase-tile tall">
+          <img class="showcase-img" style="height:100%;min-height:380px;"
+            src="assets/images/pharma_lab_1786102748882.png"
+            alt="Advanced pharmaceutical laboratory with scientists and glowing vials" loading="lazy">
+          <div class="showcase-tile-overlay">
+            <div class="showcase-tile-label" data-i18n="showcase.tile1Label">Laboratory</div>
+            <div class="showcase-tile-title" data-i18n="showcase.tile1Title">World-Class Pharma Research</div>
+          </div>
+        </div>
+        <div class="showcase-tile">
+          <img class="showcase-img" style="height:260px;" src="assets/images/compliance_office_1786102760552.png"
+            alt="Professional regulatory compliance team" loading="lazy">
+          <div class="showcase-tile-overlay">
+            <div class="showcase-tile-label" data-i18n="showcase.tile2Label">Consulting</div>
+            <div class="showcase-tile-title" data-i18n="showcase.tile2Title">Expert Advisory Team</div>
+          </div>
+        </div>
+        <div class="showcase-tile">
+          <img class="showcase-img" style="height:260px;" src="assets/images/eaeu_map_1786102795661.png"
+            alt="EAEU regional network map with Kazakhstan highlighted" loading="lazy">
+          <div class="showcase-tile-overlay">
+            <div class="showcase-tile-label" data-i18n="showcase.tile3Label">Market Access</div>
+            <div class="showcase-tile-title" data-i18n="showcase.tile3Title">EAEU Regional Reach</div>
+          </div>
+        </div>
+        <div class="showcase-tile">
+          <img class="showcase-img" style="height:260px;" src="assets/images/medical_device_1786102782858.png"
+            alt="Advanced medical devices on clinical surface" loading="lazy">
+          <div class="showcase-tile-overlay">
+            <div class="showcase-tile-label" data-i18n="showcase.tile4Label">Medical Devices</div>
+            <div class="showcase-tile-title" data-i18n="showcase.tile4Title">Device Registration Expertise</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ══════════════════════════════════════════════ -->
+  <section id="process" aria-labelledby="process-title">
+    <div class="container">
+      <div class="process-header fade-up">
+        <div class="section-label" data-i18n="process.label">How We Work</div>
+        <h2 id="process-title" class="section-title" data-i18n="process.title">Our Regulatory Process</h2>
+        <p class="section-subtitle" style="max-width:520px;" data-i18n="process.subtitle">A structured, transparent
+          four-phase methodology that minimizes risk and accelerates time-to-market approval.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step fade-up fade-up-delay-1">
+          <div class="process-num">01</div>
+          <h4 data-i18n="process.step1Title">Gap Analysis</h4>
+          <p data-i18n="process.step1Desc">Comprehensive review of your existing dossier against current Kazakhstan and
+            EAEU requirements.</p>
+        </div>
+        <div class="process-step fade-up fade-up-delay-2">
+          <div class="process-num">02</div>
+          <h4 data-i18n="process.step2Title">Strategy &amp; Planning</h4>
+          <p data-i18n="process.step2Desc">A customized regulatory roadmap with timelines, risk mitigation, and
+            resource allocation.</p>
+        </div>
+        <div class="process-step fade-up fade-up-delay-3">
+          <div class="process-num">03</div>
+          <h4 data-i18n="process.step3Title">Dossier &amp; Submission</h4>
+          <p data-i18n="process.step3Desc">Expert preparation and submission of complete registration packages to the
+            relevant authorities.</p>
+        </div>
+        <div class="process-step fade-up fade-up-delay-4">
+          <div class="process-num">04</div>
+          <h4 data-i18n="process.step4Title">Approval &amp; Maintenance</h4>
+          <p data-i18n="process.step4Desc">Active follow-up, query management, and ongoing post-approval lifecycle
+            maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MARKET / EAEU ════════════════════════════════════════ -->
+  <section id="market" aria-labelledby="market-title">
+    <div class="container">
+      <div class="market-inner">
+        <div class="market-content">
+          <div class="section-label fade-up" data-i18n="market.label">Geographic Reach</div>
+          <h2 id="market-title" class="section-title fade-up fade-up-delay-1" data-i18n="market.title">Kazakhstan
+            &amp; EAEU Market Access</h2>
+          <p class="section-subtitle fade-up fade-up-delay-2" data-i18n="market.subtitle">We specialize in navigating
+            the unified regulatory frameworks spanning the Eurasian Economic Union member states and Kazakhstan's
+            national requirements.</p>
+          <div class="market-points fade-up fade-up-delay-3">
+            <div class="market-point">
+              <div class="market-point-icon"><span class="material-symbols-outlined">location_on</span></div>
+              <div>
+                <h4 data-i18n="market.point1Title">Kazakhstan (KZ)</h4>
+                <p data-i18n="market.point1Desc">Full-scope national regulatory representation with direct authority
+                  relationships and MAH services.</p>
+              </div>
+            </div>
+            <div class="market-point">
+              <div class="market-point-icon"><span class="material-symbols-outlined">flag</span></div>
+              <div>
+                <h4 data-i18n="market.point2Title">Russian Federation (RU)</h4>
+                <p data-i18n="market.point2Desc">Navigation of the Russian regulatory system for simultaneous EAEU
+                  market access strategy.</p>
+              </div>
+            </div>
+            <div class="market-point">
+              <div class="market-point-icon"><span class="material-symbols-outlined">globe_asia</span></div>
+              <div>
+                <h4 data-i18n="market.point3Title">EAEU Unified Procedures</h4>
+                <p data-i18n="market.point3Desc">Expertise in the supranational procedures for registration valid
+                  across all five EAEU member states.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="market-visual fade-up fade-up-delay-2">
+          <img class="market-img" src="assets/images/eaeu_map_1786102795661.png"
+            alt="EAEU network map showing Kazakhstan and connected member states" loading="lazy">
+          <div class="market-img-badge">
+            <div class="badge-icon"><span class="material-symbols-outlined">public</span></div>
+            <div>
+              <div class="badge-num" data-i18n="market.badgeNum">5</div>
+              <div class="badge-label" data-i18n="market.badgeLabel">EAEU Member States</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ══════════════════════════════════════════════ -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label fade-up" data-i18n="contact.label">Get in Touch</div>
+          <h2 id="contact-title" class="section-title fade-up fade-up-delay-1" data-i18n="contact.title">Request a
+            Consultation</h2>
+          <p class="section-subtitle fade-up fade-up-delay-2" data-i18n="contact.subtitle">Have questions about
+            regulatory requirements? Our team is ready to assist you with product registration, compliance, and market
+            access in Kazakhstan and EAEU.</p>
+          <div class="contact-details fade-up fade-up-delay-3">
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><span class="material-symbols-outlined">mail</span></div>
+              <div>
+                <h4 data-i18n="contact.detailEmailLabel">Email</h4>
+                <a href="mailto:office@mansar-med.com">office@mansar-med.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><span class="material-symbols-outlined">call</span></div>
+              <div>
+                <h4 data-i18n="contact.detailPhoneLabel">Phone</h4>
+                <a href="tel:+7700000000">+7 (7XX) XXX-XX-XX</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><span class="material-symbols-outlined">location_on</span></div>
+              <div>
+                <h4 data-i18n="contact.detailLocationLabel">Office</h4>
+                <p data-i18n="contact.detailLocationValue">Almaty, Kazakhstan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up fade-up-delay-2">
+          <form id="consultation-form" class="consultation-form" novalidate>
+            <div class="form-content">
+              <h3 data-i18n="contact.formTitle">Send Us a Message</h3>
+              <p data-i18n="contact.formSubtitle">Fill out the form below and we will get back to you shortly.</p>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="form-name" data-i18n="contact.labelName">Full Name</label>
+                  <input type="text" id="form-name" name="name" required autocomplete="name"
+                    data-i18n-placeholder="contact.placeholderName" placeholder="Your full name">
+                  <span class="error-message" data-i18n="contact.errorRequired">This field is required</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-company" data-i18n="contact.labelCompany">Company</label>
+                  <input type="text" id="form-company" name="company" autocomplete="organization"
+                    data-i18n-placeholder="contact.placeholderCompany" placeholder="Your company name">
+                </div>
+                <div class="form-group">
+                  <label for="form-email" data-i18n="contact.labelEmail">Email Address</label>
+                  <input type="email" id="form-email" name="email" required autocomplete="email"
+                    data-i18n-placeholder="contact.placeholderEmail" placeholder="you@company.com">
+                  <span class="error-message" data-i18n="contact.errorEmail">Please enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-phone" data-i18n="contact.labelPhone">Phone Number</label>
+                  <input type="tel" id="form-phone" name="phone" autocomplete="tel"
+                    data-i18n-placeholder="contact.placeholderPhone" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form-group full-width">
+                  <label for="form-message" data-i18n="contact.labelMessage">Message</label>
+                  <textarea id="form-message" name="message" rows="5" required
+                    data-i18n-placeholder="contact.placeholderMessage"
+                    placeholder="Tell us about your project or regulatory needs..."></textarea>
+                  <span class="error-message" data-i18n="contact.errorRequired">This field is required</span>
+                </div>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn-primary">
+                  <span data-i18n="contact.submit">Request a Consultation</span>
+                  <span class="material-symbols-outlined">send</span>
+                </button>
+              </div>
+            </div>
+            <div class="form-success">
+              <span class="material-symbols-outlined">check_circle</span>
+              <h4 data-i18n="contact.successTitle">Message Sent!</h4>
+              <p data-i18n="contact.successMessage">Thank you for reaching out. Our team will review your inquiry and
+                get back to you within 1–2 business days.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA BANNER ═══════════════════════════════════════════ -->
+  <section id="cta" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-card fade-up">
+        <div class="cta-card-inner">
+          <h2 id="cta-title" data-i18n="cta.title">Ready to Enter Kazakhstan &amp; EAEU Markets?</h2>
+          <p data-i18n="cta.subtitle">Let our regulatory experts guide your product through every step of the
+            registration and compliance process. Reach out today for a no-obligation consultation.</p>
+          <div class="cta-btns">
+            <a href="mailto:office@mansar-med.com" class="btn-cta-white">
+              <span class="material-symbols-outlined">mail</span>
+              <span data-i18n="cta.btnPrimary">Contact Us Today</span>
+            </a>
+            <a href="#services" class="btn-cta-outline-white">
+              <span class="material-symbols-outlined">apps</span>
+              <span data-i18n="cta.btnSecondary">View All Services</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img alt="MANSAR Medical"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH1D01W7UbwObtLaaBsf2Iz6cK7imaixrM1cr0bbzdel8dROME5Dm1HEmSRSZwvebh1SLsUy-443EaHXvyyYzySJVCP14UfZHEYb87Uanh_rwQxNCMtBXADxek256B8uDN18mGu16BZiCGyjtCfjI6QFowW2kkEYiLNBidoT4gbrtXSXTjYXf8UeHHAAS_OAWDLM7SO_Imqz0fPL3T91o4MfNCmTSCB4nRBYnA6zs2F4l2MWT-fxLZtQ">
+            <span>MANSAR Medical</span>
+          </div>
+          <p class="footer-desc" data-i18n="footer.description">Expert regulatory consulting for Kazakhstan and the
+            EAEU. Navigating complex pharmaceutical and medical device compliance with precision and authority.</p>
+          <div class="footer-contact">
+            <a href="mailto:office@mansar-med.com">office@mansar-med.com</a>
+            <a href="tel:+7700000000">+7 (7XX) XXX-XX-XX</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.colCompany">Company</h5>
+          <ul>
+            <li><a href="#" data-i18n="navigation.home">Home</a></li>
+            <li><a href="#about" data-i18n="footer.linkAbout">About Us</a></li>
+            <li><a href="#services" data-i18n="footer.linkServices">Our Services</a></li>
+            <li><a href="#contact" data-i18n="navigation.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.colResources">Resources</h5>
+          <ul>
+            <li><a href="#" data-i18n="footer.linkRegUpdates">Regulatory Updates</a></li>
+            <li><a href="#" data-i18n="footer.linkEAEUGuidelines">EAEU Guidelines</a></li>
+            <li><a href="#" data-i18n="footer.linkGxP">GxP Compliance</a></li>
+            <li><a href="#" data-i18n="footer.linkPV">PV Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.colContact">Contact Details</h5>
+          <ul>
+            <li><a href="#" data-i18n="contact.detailLocationValue">Almaty, Kazakhstan</a></li>
+            <li><a href="mailto:office@mansar-med.com">office@mansar-med.com</a></li>
+            <li><a href="tel:+7700000000">+7 (7XX) XXX-XX-XX</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2024 MANSAR Medical. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/translations.js" defer></script>
+  <script src="assets/js/language.js" defer></script>
+  <script src="assets/js/navigation.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+
+</html>
