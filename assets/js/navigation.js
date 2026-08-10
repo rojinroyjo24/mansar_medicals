@@ -41,10 +41,16 @@ function initMobileMenu() {
         toggle.setAttribute('aria-expanded', 'false');
     }
 
-    toggle.addEventListener('click', () => {
+    function handleToggle(e) {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
         const isOpen = mobileNav.classList.contains('active');
         isOpen ? closeMenu() : openMenu();
-    });
+    }
+
+    toggle.addEventListener('click', handleToggle);
 
     /* Close on overlay click */
     overlay.addEventListener('click', closeMenu);

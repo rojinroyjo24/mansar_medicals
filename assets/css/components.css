@@ -220,6 +220,11 @@ nav a:hover::after {
     border-radius: var(--radius-sm);
     transition: background var(--transition);
     z-index: 110;
+    position: relative;
+}
+
+.mobile-menu-toggle * {
+    pointer-events: none;
 }
 
 .mobile-menu-toggle:hover {
@@ -249,23 +254,25 @@ nav a:hover::after {
 
 /* ─── MOBILE MENU OVERLAY ───────────────────────────────────── */
 .mobile-menu-overlay {
-    display: none;
     position: fixed;
     inset: 0;
     background: rgba(13, 28, 50, 0.5);
     backdrop-filter: blur(4px);
     z-index: 98;
     opacity: 0;
-    transition: opacity var(--transition);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition), visibility var(--transition);
 }
 
 .mobile-menu-overlay.active {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 /* ─── MOBILE NAVIGATION PANEL ───────────────────────────────── */
 .mobile-nav {
-    display: none;
     position: fixed;
     top: 0;
     right: -320px;
@@ -276,12 +283,14 @@ nav a:hover::after {
     z-index: 99;
     padding: 100px 32px 40px;
     box-shadow: var(--shadow-xl);
-    transition: right var(--transition);
+    transition: right var(--transition), visibility var(--transition);
     overflow-y: auto;
+    visibility: hidden;
 }
 
 .mobile-nav.active {
     right: 0;
+    visibility: visible;
 }
 
 .mobile-nav a {
