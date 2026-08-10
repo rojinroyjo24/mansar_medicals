@@ -254,7 +254,7 @@ const translations = {
             linkGxP: "GxP Compliance",
             linkPV: "PV Reports",
             colContact: "Contact Details",
-            copyright: "© 2024 Mansar Medical LLP. All rights reserved.",
+            copyright: '© All Rights Reserved | Developed by <a href="https://mostech.ae/" target="_blank" rel="noopener noreferrer"><strong>Mostech Business Solutions</strong></a>',
             privacy: "Privacy Policy",
             terms: "Terms of Service"
         },
@@ -673,7 +673,7 @@ const translations = {
             linkGxP: "Соответствие GxP",
             linkPV: "Отчеты по фармаконадзору",
             colContact: "Контактные данные",
-            copyright: "© 2024 Mansar Medical LLP. Все права защищены.",
+            copyright: '© Все права защищены | Разработано <a href="https://mostech.ae/" target="_blank" rel="noopener noreferrer"><strong>Mostech Business Solutions</strong></a>',
             privacy: "Политика конфиденциальности",
             terms: "Условия использования"
         },
