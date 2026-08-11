@@ -72,7 +72,7 @@ Compatible with:
 ## Contact
 
 - **Company:** Mansar Medical LLP / ТОО «Mansar Medical»
-- **Email:** info@mansarmedical.com
+- **Email:** info@mansar-med.com
 - **Phone:** +7 707 816 12 93
 - **Address:** 261 Turgut Ozal Street, Almaty 050060, Republic of Kazakhstan
 

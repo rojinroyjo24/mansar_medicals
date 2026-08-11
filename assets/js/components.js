@@ -57,7 +57,7 @@ function initContactForm() {
 
         const endpoint = form.action && !form.action.endsWith('YOUR_FORM_ID')
             ? form.action
-            : 'https://formspree.io/f/mrpzpywz';
+            : 'https://formspree.io/f/xrpzqqad';
 
         const formData = new FormData(form);
 

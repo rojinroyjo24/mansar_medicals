@@ -212,7 +212,7 @@ const translations = {
             title: "Request a Consultation",
             subtitle: "Have questions about regulatory requirements? Our team is ready to assist you with product registration, compliance, and market access in Kazakhstan and EAEU.",
             detailEmailLabel: "Email",
-            detailEmailValue: "info@mansarmedical.com",
+            detailEmailValue: "info@mansar-med.com",
             detailPhoneLabel: "Phone",
             detailPhoneValue: "+7 707 816 12 93",
             detailLocationLabel: "Office Address",
@@ -242,7 +242,7 @@ const translations = {
             companyName: "Mansar Medical LLP",
             address: "261 Turgut Ozal Street, Almaty 050060, Republic of Kazakhstan",
             phone: "+7 707 816 12 93",
-            email: "info@mansarmedical.com",
+            email: "info@mansar-med.com",
             colCompany: "Company",
             linkAbout: "About Us",
             linkServices: "Our Services",
@@ -408,7 +408,7 @@ const translations = {
             sec4Title: "4. Data Retention & Security",
             sec4Text: "MANSAR Medical maintains physical, technical, and administrative safeguards to protect client records from unauthorized access, loss, or disclosure. Records are retained in accordance with statutory requirements for pharmaceutical and medical device archives.",
             sec5Title: "5. Your Legal Rights",
-            sec5Text: 'You have the right to request access to, correction of, or deletion of your personal contact records maintained by MANSAR Medical by contacting us at <a href="mailto:info@mansarmedical.com" style="color:var(--c-secondary);">info@mansarmedical.com</a>.'
+            sec5Text: 'You have the right to request access to, correction of, or deletion of your personal contact records maintained by MANSAR Medical by contacting us at <a href="mailto:info@mansar-med.com" style="color:var(--c-secondary);">info@mansar-med.com</a>.'
         },
         termsPage: {
             bannerTitle: "Terms of Service",
@@ -631,7 +631,7 @@ const translations = {
             title: "Получить консультацию",
             subtitle: "Есть вопросы о регуляторных требованиях? Наша команда готова помочь вам с регистрацией продукции, обеспечением соответствия и выходом на рынки Казахстана и ЕАЭС.",
             detailEmailLabel: "Электронная почта",
-            detailEmailValue: "info@mansarmedical.com",
+            detailEmailValue: "info@mansar-med.com",
             detailPhoneLabel: "Телефон",
             detailPhoneValue: "+7 707 816 12 93",
             detailLocationLabel: "Адрес офиса",
@@ -661,7 +661,7 @@ const translations = {
             companyName: "Mansar Medical LLP",
             address: "Республика Казахстан, г. Алматы, ул. Тургут Озала, д. 261, 050060",
             phone: "+7 707 816 12 93",
-            email: "info@mansarmedical.com",
+            email: "info@mansar-med.com",
             colCompany: "Компания",
             linkAbout: "О нас",
             linkServices: "Наши услуги",
@@ -827,7 +827,7 @@ const translations = {
             sec4Title: "4. Хранение и безопасность данных",
             sec4Text: "MANSAR Medical обеспечивает физические, технические и административные меры защиты документов клиентов от несанкционированного доступа, утраты или разглашения. Записи хранятся в соответствии с установленными законом требованиями к архивам фармацевтической и медицинской продукции.",
             sec5Title: "5. Ваши законные права",
-            sec5Text: 'Вы имеете право запросить доступ к своим персональным контактным данным, их исправление или удаление из системы MANSAR Medical, направив запрос по адресу <a href="mailto:info@mansarmedical.com" style="color:var(--c-secondary);">info@mansarmedical.com</a>.'
+            sec5Text: 'Вы имеете право запросить доступ к своим персональным контактным данным, их исправление или удаление из системы MANSAR Medical, направив запрос по адресу <a href="mailto:info@mansar-med.com" style="color:var(--c-secondary);">info@mansar-med.com</a>.'
         },
         termsPage: {
             bannerTitle: "Условия использования",
