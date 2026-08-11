@@ -268,7 +268,11 @@ const translations = {
             faqTitle: "Frequently Asked Questions",
             breadcrumbHome: "Home",
             breadcrumbServices: "Services",
-            learnMore: "Learn More"
+            learnMore: "Learn More",
+            sidebarNavPharma: "Pharmaceuticals",
+            sidebarNavDevices: "Medical Devices",
+            sidebarNavConsulting: "Regulatory Consulting",
+            sidebarNavPV: "Pharmacovigilance"
         },
         aboutPage: {
             bannerTitle: "About MANSAR Medical",
@@ -687,7 +691,11 @@ const translations = {
             faqTitle: "Часто задаваемые вопросы",
             breadcrumbHome: "Главная",
             breadcrumbServices: "Услуги",
-            learnMore: "Подробнее"
+            learnMore: "Подробнее",
+            sidebarNavPharma: "Лекарственные средства",
+            sidebarNavDevices: "Медицинские изделия",
+            sidebarNavConsulting: "Регуляторный консалтинг",
+            sidebarNavPV: "Фармаконадзор"
         },
         aboutPage: {
             bannerTitle: "О компании MANSAR Medical",
